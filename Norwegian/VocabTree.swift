@@ -79,6 +79,9 @@ class DictionaryNode {
     var parent: DictionaryNode? = nil
     
     func root() -> DictionaryNode {
+        /*
+         Get the root node of the tree. 
+         */
         if parent == nil {
             return self
         }
@@ -88,6 +91,9 @@ class DictionaryNode {
     }
     
     func add(word: String) {
+        /*
+         Adds the word to the dictionary. Does not mind if the word is already in the Dictionary
+         */
         var b = root()
         for c in word.characters {
             let i = get_alpha_value(of: c)
@@ -98,6 +104,9 @@ class DictionaryNode {
     }
     
     func search(for word: String) -> Bool {
+        /*
+         Searches for the given word, if found returns true, if not found returns false.
+         */
         var b: DictionaryNode? = root()
         for c in word.characters {
             b = b!.children[get_alpha_value(of: c)]

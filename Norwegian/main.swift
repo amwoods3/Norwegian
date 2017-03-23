@@ -17,4 +17,4 @@ print("Hallo, verden!")
 let myDictionary = DictionaryNode()
 
 myDictionary.add(word: "jeg")
-print(myDictionary.search(for: "jeg"))
+print(myDictionary.search(for: "Jeg"))
