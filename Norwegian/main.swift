@@ -8,5 +8,13 @@
 
 import Foundation
 
-print("Hello, World!")
+/*
+ This program is to help me start to learn Norwegian (writing/bokmål)
+ */
 
+print("Hallo, verden!")
+
+let myDictionary = DictionaryNode()
+
+myDictionary.add(word: "jeg")
+print(myDictionary.search(for: "jeg"))
